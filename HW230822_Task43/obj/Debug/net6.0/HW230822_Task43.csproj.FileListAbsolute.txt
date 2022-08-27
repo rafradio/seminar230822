@@ -1,0 +1,15 @@
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.AssemblyInfo.cs
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\bin\Debug\net6.0\HW230822_Task43.exe
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\bin\Debug\net6.0\HW230822_Task43.deps.json
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\bin\Debug\net6.0\HW230822_Task43.runtimeconfig.json
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\bin\Debug\net6.0\HW230822_Task43.dll
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\bin\Debug\net6.0\HW230822_Task43.pdb
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.dll
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\refint\HW230822_Task43.dll
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.pdb
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\HW230822_Task43.genruntimeconfig.cache
+C:\Users\ASUS\Documents\Work\C#\Seminar_C_230822\HW230822_Task43\obj\Debug\net6.0\ref\HW230822_Task43.dll
