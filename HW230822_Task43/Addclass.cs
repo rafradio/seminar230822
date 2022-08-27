@@ -63,22 +63,50 @@ namespace TwoGraphics
     }
     class FindCrossing : Program43
     {
+        public bool haveCross;
+        public int startIntervalX;
+        public int endIntervalX;
+        public int counter;
         public FindCrossing(GraphSettig graphFind1, GraphSettig graphFind2)
         {
             this.DoesItCross(graphFind1, graphFind2);
+            if (this.haveCross) 
+            {
+                this.counter = 0;
+//                this.startIntervalX = this.graphMinNum;
+//                this.endIntervalX = this.graphMinNum + this.stepIteration;
+                this.ExecGraphCross(graphFind1, graphFind2);
+            }
+            else Console.WriteLine("Графики не пересекаются");
         }
         public void DoesItCross(GraphSettig graphFind1, GraphSettig graphFind2)
         {
             int length1 = graphFind1.arrayXY.GetLength(0) - 1;
             int length2 = graphFind2.arrayXY.GetLength(0) - 1;
-            bool haveCross = false;
-            
-            if ((graphFind1.arrayXY[0, 1] - graphFind2.arrayXY[0, 1]) > 0 
-                    && (graphFind1.arrayXY[length1, 1] - graphFind2.arrayXY[length2, 1]) < 0) haveCross = true;
-            if ((graphFind1.arrayXY[0, 1] - graphFind2.arrayXY[0, 1]) < 0 
-                    && (graphFind1.arrayXY[length1, 1] - graphFind2.arrayXY[length2, 1]) > 0) haveCross = true;
-            if (haveCross) Console.WriteLine("Графики пересекаются");
-            else Console.WriteLine("Графики не пересекаются");
+            this.haveCross = false;
+
+            double checkFlag = (graphFind1.arrayXY[0, 1] - graphFind2.arrayXY[0, 1]);
+            checkFlag = checkFlag * (graphFind1.arrayXY[length1, 1] - graphFind2.arrayXY[length2, 1]);
+            if (checkFlag <= 0) this.haveCross = true;
+        }
+        public void ExecGraphCross(GraphSettig graphFind1, GraphSettig graphFind2)
+        {
+            this.startIntervalX = this.counter * this.stepIteration;
+            this.endIntervalX = ((this.counter + 1) * this.stepIteration) < graphFind1.arrayXY.GetLength(0) ? (this.counter + 1) * this.stepIteration: graphFind1.arrayXY.GetLength(0) -1;
+            double checkFlag = (graphFind1.arrayXY[this.startIntervalX, 1] - graphFind2.arrayXY[this.startIntervalX, 1]);
+            checkFlag = checkFlag * (graphFind1.arrayXY[this.endIntervalX, 1] - graphFind2.arrayXY[this.endIntervalX, 1]);
+            if (checkFlag > 0)
+            {
+                this.counter++;
+                this.ExecGraphCross(graphFind1, graphFind2);
+            }
+            else
+            {
+                Console.WriteLine($"Графики пересекаются между {graphFind1.arrayXY[this.startIntervalX, 0]} и {graphFind1.arrayXY[this.endIntervalX, 0]}");
+            }
+            return;
+
+
         }
 
     }

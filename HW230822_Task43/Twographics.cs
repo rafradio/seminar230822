@@ -6,6 +6,7 @@ namespace TwoGraphics
     {
         public int graphMinNum = -100;
         public int graphMaxNum = 100;
+        public int stepIteration = 10;
         public string[] intiParam = new string[4] {"b1", "k1", "b2", "k2"}; 
         static void Main(string[] args) 
         {
