@@ -9,6 +9,7 @@ namespace EnterDigits
         static void Main(string[] args) 
         {
             Console.Clear();
+            Console.WriteLine("Программа на ввод чисел \nРандомно ограничено количество вводов \nВы можете выйти набрав end");
             InitialSettings init = new InitialSettings();
             Console.Clear();
             Console.WriteLine($"Вы ввели следующее: [{String.Join(", ", init.arrayDigit)}]");
