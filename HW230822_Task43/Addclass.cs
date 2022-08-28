@@ -105,8 +105,8 @@ namespace TwoGraphics
             }
             else
             {
-                double checkStep = this.stepIteration / 10;
-                this.stepIteration = Convert.ToInt32(this.stepIteration / 10);
+                double checkStep = this.stepIteration / 100;
+                this.stepIteration = Convert.ToInt32(this.stepIteration / 100);
                 if (checkStep >= 1)
                 {
                     this.counter = 0;

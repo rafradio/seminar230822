@@ -4,9 +4,9 @@ namespace TwoGraphics
 {
     class Program43
     {
-        public int graphMinNum = -10000;
-        public int graphMaxNum = 10000;
-        public int stepIteration = 1000;
+        public int graphMinNum = -100000000;
+        public int graphMaxNum = 100000000;
+        public int stepIteration = 1000000;
         public string[] intiParam = new string[4] {"b1", "k1", "b2", "k2"}; 
         static void Main(string[] args) 
         {
